@@ -2,15 +2,15 @@ import dearpygui.dearpygui as dpg
 
 dpg.create_context()
 
-with dpg.window(label="Tutorial", pos=(20, 50), width=275, height=225) as win1:
-    t1 = dpg.add_input_text(default_value="some text")
-    t2 = dpg.add_input_text(default_value="some text")
+with dpg.window(label="Tutorial win1", pos=(20, 50), width=275, height=225) as win1:
+    t1 = dpg.add_input_text(default_value="some text 1")
+    t2 = dpg.add_input_text(default_value="some text 2")
     with dpg.child_window(height=100):
-        t3 = dpg.add_input_text(default_value="some text")
+        t3 = dpg.add_input_text(default_value="some text 3")
         dpg.add_input_int()
-    dpg.add_input_text(default_value="some text")
+    dpg.add_input_text(default_value="some text 4")
 
-with dpg.window(label="Tutorial", pos=(320, 50), width=275, height=225) as win2:
+with dpg.window(label="Tutorial win2", pos=(320, 50), width=275, height=225) as win2:
     dpg.add_input_text(default_value="some text")
     dpg.add_input_int()
 
